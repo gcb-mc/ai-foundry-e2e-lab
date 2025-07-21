@@ -1,23 +1,23 @@
-site_name: Azure AI Foundry Workshop
-site_description: A practical 4-5 hour workshop on building intelligent health and dietary advice agents with Azure AI Foundry
-site_url: https://workshop.aifoundry.app
+site_name: Azure AI Foundry E2E Lab - Kapil Dhanger
+site_description: Comprehensive end-to-end laboratory for building intelligent AI agents and applications using Azure AI Foundry platform
+site_url: https://kapildhanger-ai-foundry-lab.github.io
 site_author: Kapil Dhanger
 
 theme:
   name: material
   custom_dir: docs/assets/overrides
   font:
-    text: Inter
+    text: Roboto
   palette:
     - scheme: slate
-      primary: deep purple
-      accent: teal
+      primary: indigo
+      accent: cyan
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
     - scheme: default
-      primary: deep purple
-      accent: teal
+      primary: indigo
+      accent: cyan
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
@@ -48,6 +48,7 @@ nav:
       - Embeddings: 2-notebooks/1-chat_completion/2-embeddings.ipynb
       - Basic RAG: 2-notebooks/1-chat_completion/3-basic-rag.ipynb
       - Phi-4: 2-notebooks/1-chat_completion/4-phi-4.ipynb
+      - DeepSeek R1: 2-notebooks/1-chat_completion/5-deep-seek-r1.ipynb
     - Agent Development:
       - Basics: 2-notebooks/2-agent_service/1-basics.ipynb
       - Code Interpreter: 2-notebooks/2-agent_service/2-code_interpreter.ipynb
@@ -55,9 +56,16 @@ nav:
       - Bing Grounding: 2-notebooks/2-agent_service/4-bing_grounding.ipynb
       - AI Search: 2-notebooks/2-agent_service/5-agents-aisearch.ipynb
       - Azure Functions: 2-notebooks/2-agent_service/6-agents-az-functions.ipynb
+    - Multi-Agent Systems:
+      - Multi-Agent Solution: 2-notebooks/multi-agent/multi-agent-solution.ipynb
+      - Multi-Agent with Tracing: 2-notebooks/multi-agent/multi-agent-solution-with-tracing.ipynb
     - Quality Attributes:
       - Observability: 2-notebooks/3-quality_attributes/1-Observability.ipynb
       - Evaluation: 2-notebooks/3-quality_attributes/2-evaluation.ipynb
+    - Advanced Frameworks:
+      - RAG + SK + Agents: 2-notebooks/4-frameworks/1-rag-sk-agents-aisearch.ipynb
+      - AutoGen Multi-Agent RAG: 2-notebooks/4-frameworks/2-autogen-multi-agent-rag.ipynb
+      - AutoGen Heart Rate Analysis: 2-notebooks/4-frameworks/3-autogen-personalized-heart-rate.ipynb
   - E2E Sample:
     - Backend: 3-ai-native-e2e-sample/backend/README.md
     - Frontend: 3-ai-native-e2e-sample/frontend/README.md
@@ -111,7 +119,7 @@ plugins:
   - git-revision-date-localized
   - git-revision-date
   - git-committers:
-      repository: Azure/ai-foundry-workshop
+      repository: dhangerkapil/ai-foundry-e2e-lab
       branch: main
   - macros
   - table-reader
@@ -128,13 +136,13 @@ extra:
         name: This page was helpful
         data: 1
         note: >-
-          Thanks for your feedback! - Azure App Innovation GBB
+          Thanks for your feedback! - Kapil Dhanger
       - icon: material/emoticon-sad-outline
         name: This page could be improved
         data: 0
         note: >-
           Thanks for your feedback! Help us improve this page by
-          using our feedback form.
+          using our feedback form - Kapil Dhanger.
 
 extra_css:
   - assets/stylesheets/extra.css
