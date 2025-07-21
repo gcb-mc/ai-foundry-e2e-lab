@@ -47,6 +47,7 @@ ai-foundry-e2e-lab/
 ├── 💬 chat-rag/               # Chat completion and RAG fundamentals
 ├── 🤖 agents/                 # AI Agents development and tools
 ├── 🔄 multi-agent/            # Multi-agent systems and orchestration
+├── 🔌 agents-with-mcp/        # Model Context Protocol (MCP) integration
 ├── 🏗️ frameworks/             # Advanced frameworks (Semantic Kernel, AutoGen)
 ├── 📊 observalibility/         # Monitoring, evaluation, and quality assurance
 
@@ -165,7 +166,14 @@ Follow this structured learning path to master Azure AI Foundry:
 | 👥 [Multi-Agent Solution](multi-agent/multi-agent-solution.ipynb) | Collaborative AI systems |
 | 📊 [Multi-Agent with Tracing](multi-agent/multi-agent-solution-with-tracing.ipynb) | Advanced monitoring |
 
-### 🏗️ Phase 5: Advanced Frameworks
+### 🔌 Phase 5: Model Context Protocol (MCP) Integration
+**Location:** `agents-with-mcp/`
+
+| Notebook | Description |
+|----------|-------------|
+| 🔌 [Agents with MCP](agents-with-mcp/agents-mcp.ipynb) | Build agents that connect to MCP servers for dynamic function discovery. Create an inventory assessment agent for a cosmetics retailer with automated restock and clearance suggestions. |
+
+### 🏗️ Phase 6: Advanced Frameworks
 **Location:** `frameworks/`
 
 | Notebook | Description |
@@ -174,7 +182,7 @@ Follow this structured learning path to master Azure AI Foundry:
 | 🤖 [AutoGen Multi-Agent RAG](frameworks/2-autogen-multi-agent-rag.ipynb) | Automated agent generation |
 | ❤️ [AutoGen Personalized Analytics](frameworks/3-autogen-personalized-heart-rate.ipynb) | Health domain specialization |
 
-### 📊 Phase 6: Quality & Operations
+### 📊 Phase 7: Quality & Operations
 **Location:** `observalibility/`
 
 | Notebook | Description |
