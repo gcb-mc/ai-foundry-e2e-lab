@@ -50,7 +50,7 @@ ai-foundry-e2e-lab/
 ├── 🏗️ frameworks/             # Advanced frameworks (Semantic Kernel, AutoGen)
 ├── ⚡ azure-functions/         # Serverless integration patterns
 ├── 📊 observalibility/         # Monitoring, evaluation, and quality assurance
-└── 📖 docs/                   # Documentation and resources
+
 ```
 
 ---
