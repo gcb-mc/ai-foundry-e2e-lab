@@ -78,8 +78,6 @@ ENV/
 
 .env
 
-# MkDocs documentation
-site*/
 .vscode/
 
 # Build results
