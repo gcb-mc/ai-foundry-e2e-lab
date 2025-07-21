@@ -129,59 +129,59 @@ Follow this structured learning path to master Azure AI Foundry:
 ### 🎯 Phase 1: Foundation (Start Here)
 **Location:** `initial-setup/`
 
-| Notebook | Description | Duration |
-|----------|-------------|----------|
-| 🔐 [Authentication](initial-setup/1-authentication.ipynb) | Azure credential setup and security | 30 min |
-| ⚙️ [Environment Setup](initial-setup/2-environment_setup.ipynb) | Development environment configuration | 20 min |
-| 🚀 [Quick Start](initial-setup/3-quick_start.ipynb) | First AI model interaction | 15 min |
+| Notebook | Description |
+|----------|-------------|
+| 🔐 [Authentication](initial-setup/1-authentication.ipynb) | Azure credential setup and security |
+| ⚙️ [Environment Setup](initial-setup/2-environment_setup.ipynb) | Development environment configuration |
+| 🚀 [Quick Start](initial-setup/3-quick_start.ipynb) | First AI model interaction |
 
 ### 💬 Phase 2: Chat & RAG Fundamentals
 **Location:** `chat-rag/`
 
-| Notebook | Description | Duration |
-|----------|-------------|----------|
-| 💬 [Basic Chat Completion](chat-rag/1-basic-chat-completion.ipynb) | Foundation models and prompting | 25 min |
-| 🔍 [Embeddings](chat-rag/2-embeddings.ipynb) | Vector representations and similarity | 30 min |
-| 📚 [Basic RAG](chat-rag/3-basic-rag.ipynb) | Retrieval-Augmented Generation | 45 min |
-| 🧠 [Phi-4](chat-rag/4-phi-4.ipynb) | Microsoft's reasoning model | 20 min |
-| 🤖 [DeepSeek R1](chat-rag/5-deep-seek-r1.ipynb) | Advanced reasoning capabilities | 25 min |
+| Notebook | Description |
+|----------|-------------|
+| 💬 [Basic Chat Completion](chat-rag/1-basic-chat-completion.ipynb) | Foundation models and prompting |
+| 🔍 [Embeddings](chat-rag/2-embeddings.ipynb) | Vector representations and similarity |
+| 📚 [Basic RAG](chat-rag/3-basic-rag.ipynb) | Retrieval-Augmented Generation |
+| 🧠 [Phi-4](chat-rag/4-phi-4.ipynb) | Microsoft's reasoning model |
+| 🤖 [DeepSeek R1](chat-rag/5-deep-seek-r1.ipynb) | Advanced reasoning capabilities |
 
 ### 🤖 Phase 3: AI Agents Development  
 **Location:** `agents/`
 
-| Notebook | Description | Duration |
-|----------|-------------|----------|
-| 🤖 [Agent Basics](agents/1-basics.ipynb) | Fundamental agent concepts | 30 min |
-| 💻 [Code Interpreter](agents/2-code_interpreter.ipynb) | Code execution capabilities | 35 min |
-| 📄 [File Search](agents/3-file-search.ipynb) | Document processing | 40 min |
-| 🌐 [Bing Grounding](agents/4-bing_grounding.ipynb) | Web search integration | 30 min |
-| 🔍 [Agents + AI Search](agents/5-agents-aisearch.ipynb) | Enterprise search integration | 45 min |
-| ⚡ [Agents + Azure Functions](agents/6-agents-az-functions.ipynb) | Serverless integration | 40 min |
+| Notebook | Description |
+|----------|-------------|
+| 🤖 [Agent Basics](agents/1-basics.ipynb) | Fundamental agent concepts |
+| 💻 [Code Interpreter](agents/2-code_interpreter.ipynb) | Code execution capabilities |
+| 📄 [File Search](agents/3-file-search.ipynb) | Document processing |
+| 🌐 [Bing Grounding](agents/4-bing_grounding.ipynb) | Web search integration |
+| 🔍 [Agents + AI Search](agents/5-agents-aisearch.ipynb) | Enterprise search integration |
+| ⚡ [Agents + Azure Functions](agents/6-agents-az-functions.ipynb) | Serverless integration |
 
 ### 🔄 Phase 4: Multi-Agent Systems
 **Location:** `multi-agent/`
 
-| Notebook | Description | Duration |
-|----------|-------------|----------|
-| 👥 [Multi-Agent Solution](multi-agent/multi-agent-solution.ipynb) | Collaborative AI systems | 45 min |
-| 📊 [Multi-Agent with Tracing](multi-agent/multi-agent-solution-with-tracing.ipynb) | Advanced monitoring | 50 min |
+| Notebook | Description |
+|----------|-------------|
+| 👥 [Multi-Agent Solution](multi-agent/multi-agent-solution.ipynb) | Collaborative AI systems |
+| 📊 [Multi-Agent with Tracing](multi-agent/multi-agent-solution-with-tracing.ipynb) | Advanced monitoring |
 
 ### 🏗️ Phase 5: Advanced Frameworks
 **Location:** `frameworks/`
 
-| Notebook | Description | Duration |
-|----------|-------------|----------|
-| 🔧 [RAG + Semantic Kernel + Agents](frameworks/1-rag-sk-agents-aisearch.ipynb) | Microsoft's orchestration framework | 50 min |
-| 🤖 [AutoGen Multi-Agent RAG](frameworks/2-autogen-multi-agent-rag.ipynb) | Automated agent generation | 45 min |
-| ❤️ [AutoGen Personalized Analytics](frameworks/3-autogen-personalized-heart-rate.ipynb) | Health domain specialization | 40 min |
+| Notebook | Description |
+|----------|-------------|
+| 🔧 [RAG + Semantic Kernel + Agents](frameworks/1-rag-sk-agents-aisearch.ipynb) | Microsoft's orchestration framework |
+| 🤖 [AutoGen Multi-Agent RAG](frameworks/2-autogen-multi-agent-rag.ipynb) | Automated agent generation |
+| ❤️ [AutoGen Personalized Analytics](frameworks/3-autogen-personalized-heart-rate.ipynb) | Health domain specialization |
 
 ### 📊 Phase 6: Quality & Operations
 **Location:** `observalibility/`
 
-| Notebook | Description | Duration |
-|----------|-------------|----------|
-| 👁️ [Observability](observalibility/1-Observability.ipynb) | Monitoring and telemetry | 35 min |
-| 📈 [Evaluation](observalibility/2-evaluation.ipynb) | Quality assessment and benchmarking | 40 min |
+| Notebook | Description |
+|----------|-------------|
+| 👁️ [Observability](observalibility/1-Observability.ipynb) | Monitoring and telemetry |
+| 📈 [Evaluation](observalibility/2-evaluation.ipynb) | Quality assessment and benchmarking |
 
 ### ⚡ Phase 7: Serverless Integration
 **Location:** `azure-functions/`
@@ -283,15 +283,3 @@ Please review our [Contributing Guide](CONTRIBUTING.md) for:
 **Created by:** Kapil Dhanger  
 **License:** MIT License  
 **Repository:** [github.com/dhangerkapil/ai-foundry-e2e-lab](https://github.com/dhangerkapil/ai-foundry-e2e-lab)
-
----
-
-<div align="center">
-
-**🚀 Ready to become an Azure AI Foundry expert?**
-
-[Start Your Journey](initial-setup/1-authentication.ipynb) • [Join Our Community](https://github.com/dhangerkapil/ai-foundry-e2e-lab/discussions) • [Report Issues](https://github.com/dhangerkapil/ai-foundry-e2e-lab/issues)
-
-*Built with ❤️ by Kapil Dhanger*
-
-</div>
