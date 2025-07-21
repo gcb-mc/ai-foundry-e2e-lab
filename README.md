@@ -33,7 +33,7 @@ This comprehensive laboratory transforms you from an AI enthusiast into an Azure
 - Multi-agent orchestration and coordination patterns
 - Quality assurance through comprehensive evaluation and monitoring
 
-> **🎓 Laboratory Format**: 4-5 hour intensive hands-on experience  
+> **🎓 Laboratory Format**: One day intensive hands-on experience  
 > **🎯 Target Audience**: Developers, AI practitioners, and solution architects  
 > **💡 Learning Approach**: Progressive complexity with real-world applications
 
