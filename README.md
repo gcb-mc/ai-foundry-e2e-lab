@@ -48,7 +48,6 @@ ai-foundry-e2e-lab/
 ├── 🤖 agents/                 # AI Agents development and tools
 ├── 🔄 multi-agent/            # Multi-agent systems and orchestration
 ├── 🏗️ frameworks/             # Advanced frameworks (Semantic Kernel, AutoGen)
-├── ⚡ azure-functions/         # Serverless integration patterns
 ├── 📊 observalibility/         # Monitoring, evaluation, and quality assurance
 
 ```
