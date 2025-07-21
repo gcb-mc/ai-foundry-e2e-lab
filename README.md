@@ -182,11 +182,6 @@ Follow this structured learning path to master Azure AI Foundry:
 | 👁️ [Observability](observalibility/1-Observability.ipynb) | Monitoring and telemetry |
 | 📈 [Evaluation](observalibility/2-evaluation.ipynb) | Quality assessment and benchmarking |
 
-### ⚡ Phase 7: Serverless Integration
-**Location:** `azure-functions/`
-
-Explore serverless AI patterns with Azure Functions integration for scalable, event-driven AI applications.
-
 ---
 
 ## 🔧 Environment Setup
