@@ -1,202 +1,380 @@
-# Azure AI Foundry Workshop
+# 🚀 Azure AI Foundry E2E Laboratory
 
-<div align="center">
+<di## 🔧 Environment Setup
 
-[📦Prerequisites](#-prerequisites) | [🚀Quick Start](#-quick-start) | [🤖Overview](#-overview) | [📔Workshop Content](#-workshop-content) | [🧩Project Structure](#-project-structure) | [❓Support](#-support) | [🤝Contributing](#-contributing)
+### 📋 System Requirementslign="center">
+
+[![Azure AI Foundry](https://img.shields.io/badge/Azure%20AI-Foundry-blue?style=for-the-badge&l## 📚 Learning Modules
+
+Our laboratory follows a progressive learning architecture, designed to build expertise systematically:icrosoft)](https://ai.azure.com)
+[![Python](https://img.shields.io/badge/Python-3.10+-green?style=for-the-badge&logo=python)](https://python.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Lab-orange?style=for-the-badge&logo=jupyter)](https://jupyter.org)
+
+**End-to-End AI Development Laboratory by Kapil Dhanger**
+
+*Master Azure AI Foundry through hands-on experimentation and real-world applications*
+
+---
+
+🎯 [Getting Started](#-getting-started) • 📚 [Learning Modules](#-learning-modules) • 🔧 [Setup Guide](#-environment-setup) • 🤖 [Multi-Agent Systems](#-multi-agent-systems) • 📊 [Project Gallery](#-project-gallery)
 
 </div>
 
+---
 
-## 🤖 Overview
+## 🎯 Mission Statement
 
-A hands-on workshop that guides you through building intelligent apps and AI agents on top of Azure AI Foundry, with fun examples related to health and dietary advice. You will:
-- Learn Azure AI Foundry fundamentals
-- Set up authentication and project configuration
-- Deploy and test AI models
-- Build AI agents (health advisor examples)
-- Implement health calculations and dietary planning
-- Evaluate agent performance and monitor quality attributes
-- Deploy an end-to-end AI native sample app that incorporates all these capabilities and design patterns
+This comprehensive laboratory transforms you from an AI enthusiast into an Azure AI Foundry expert. Through progressive, hands-on modules, you'll master:
 
-> **Duration**: 4-5 hours  
-> **Focus**: Hands-on exercises, interactive notebooks, practical examples, end-to-end project
+🔬 **Core AI Engineering**
+- Advanced model deployment strategies and optimization techniques
+- Production-ready authentication and security implementation  
+- Scalable project architecture and configuration management
 
-## 🎥 Workshop Overview Video
+🤖 **Intelligent Agent Development**
+- Multi-modal AI agents with specialized health and wellness expertise
+- Advanced RAG (Retrieval-Augmented Generation) implementations
+- Real-time decision-making systems and automated workflows
 
-Watch our overview video to get a comprehensive understanding of the workshop:
-[![Azure AI Foundry Workshop Overview](https://img.youtube.com/vi/0bGLgmZJ6DE/0.jpg)](https://youtu.be/0bGLgmZJ6DE)
+🏗️ **Enterprise-Grade Solutions**
+- End-to-end AI application development with modern frameworks
+- Multi-agent orchestration and coordination patterns
+- Quality assurance through comprehensive evaluation and monitoring
 
-## 📸 Visuals
+> **🎓 Laboratory Format**: 4-5 hour intensive hands-on experience  
+> **🎯 Target Audience**: Developers, AI practitioners, and solution architects  
+> **💡 Learning Approach**: Progressive complexity with real-world applications
 
-### Sections Overview
-<img src="./3-ai-native-e2e-sample/assets/sections.png" width="70%" />
-*Figure 1: Overview of different sections in this workshop.*
+## � Environment Setup## 🔧 Environment Setup
 
-### End-to-End Sample UI
-<img src="./3-ai-native-e2e-sample/assets/ui.png" width="70%" />
-*Figure 2: User interface of the end-to-end AI native sample project.*
+### 📋 System Requirements
+
+**Essential Components:**
+- 🐍 [Python 3.10+](https://www.python.org/downloads/) - Latest stable version recommended
+- ☁️ [Azure Subscription](https://ai.azure.com) - Active subscription with Azure AI Foundry access
+- 💻 Development Environment: Choose your preferred option
+  - [Visual Studio Code](https://code.visualstudio.com/) with Python & Jupyter extensions
+  - [GitHub Codespaces](https://github.com/features/codespaces) for cloud development
+  - [JupyterLab](https://jupyter.org/install) for notebook-first development
+- 🛠️ [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) - For Azure resource management
+- 📦 [Git](https://git-scm.com/downloads) - Version control and repository management
+
+**Knowledge Prerequisites:**
+- ✅ Intermediate Python programming skills
+- ✅ Basic understanding of machine learning concepts
+- ✅ Familiarity with REST APIs and web services
+- ✅ Experience with Azure services (recommended)
 
 ---
 
-## 📦 Prerequisites    
+## 🚀 Getting Started
 
-Before starting the workshop, ensure you have:
+### Step 1: Repository Setup
 
-- [Python 3.10](https://www.python.org/downloads/) or higher installed
-- An active Azure subscription with access to [Azure AI Foundry](https://ai.azure.com)
-- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) installed
-- [Git](https://git-scm.com/downloads) installed
-- [VS Code](https://code.visualstudio.com/), [GitHub Codespaces](https://github.com/features/codespaces), or [Jupyter Notebook](https://jupyter.org/install) environment
-- Basic Python programming knowledge
-- Model deployment and [AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) connection configured in Azure AI Foundry
+```bash
+# Clone the laboratory repository
+git clone https://github.com/dhangerkapil/ai-foundry-e2e-lab.git
+cd ai-foundry-e2e-lab
 
----
+# Verify Python version
+python --version  # Should be 3.10 or higher
+```
 
-## 🚀 Quick Start
+### Step 2: Python Environment Configuration
 
-1. **Clone the repo**:
-   ```bash
-   git clone https://github.com/dhangerkapil/ai-foundry-e2e-lab.git
-   cd ai-foundry-e2e-lab
-   ```
+**Option A: Using UV (Recommended - Fastest)**
+```bash
+# Install UV package manager
+# Unix/Linux/macOS
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
-2. **Install uv**:
-   ```bash
-   # Unix/Linux/macOS
-   curl -LsSf https://astral.sh/uv/install.sh | sh
+# Windows PowerShell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
-   # Windows (PowerShell)   
-   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-   ```
+# Create and activate virtual environment
+uv venv
+source .venv/bin/activate     # Unix/Linux/macOS
+# OR
+.\.venv\Scripts\Activate.ps1  # Windows PowerShell
+```
 
-3. **Create & activate a virtual environment**:
-   ```bash
-   uv venv
-   source .venv/bin/activate  # Windows: .\.venv\Scripts\Activate.ps1 
-   ```
+**Option B: Using Standard venv**
+```bash
+# Create virtual environment
+python -m venv .venv
 
-4. **Set up Azure AI Foundry**:
+# Activate environment
+source .venv/bin/activate     # Unix/Linux/macOS
+# OR  
+.\.venv\Scripts\activate      # Windows
+```
 
-   a. **Create Project and Deploy Resources**:
-      1. Go to [Azure AI Foundry](https://ai.azure.com)
-      2. Create a new AI Foundry resource and foundry Project using the AI Foundry Wizard
-      3. Deploy required models:
-         - GPT models(gpt-4o, gpt-4o-mini) for chat/completion (**set TPM to max** to avoid issues with Agents notebooks)
-         - Embedding model for vector search
-         - Ensure the model is deployed in `Global-Standard` or `DataZone-Standard`
-      4. Set up connections:
-         - Configure [Grounding with Bing](https://learn.microsoft.com/en-us/azure/ai-services/agents/how-to/tools/bing-grounding?view=azure-python-preview&tabs=python&pivots=overview) connection
-         - Configure Azure AI Search connection
-      5. Add your user account to the `Azure AI Developer` role from Azure AI Foundry Management Portal
+### Step 3: Azure AI Foundry Platform Setup
 
-   b. **Configure Environment Variables**:
-      ```bash
-      cp .env.example .env
-      ```
-      Update `.env` with your Azure AI Foundry values:
-      - `PROJECT_CONNECTION_STRING`: Your project connection string from Azure ML workspace
-      - `MODEL_DEPLOYMENT_NAME`: Your model deployment name
-      - `EMBEDDING_MODEL_DEPLOYMENT_NAME`: Your embedding model deployment name
-      - `TENANT_ID`: Your tenant ID from Azure portal
-      - `BING_CONNECTION_NAME`: Your Bing search connection name
-      - `SERVERLESS_MODEL_NAME`: Your serverless model name
+#### 🏗️ Infrastructure Deployment
 
-      > **Note**: The model specified in `MODEL_DEPLOYMENT_NAME` must be supported by Azure AI Agents Service or Assistants API. See [supported models](https://learn.microsoft.com/en-us/azure/ai-services/agents/concepts/model-region-support?tabs=python#azure-openai-models) for details. For Grounding with Bing Search, you need to use `gpt-4o-mini` model.
+**3a. Create Azure AI Foundry Project**
+1. Navigate to [Azure AI Foundry Portal](https://ai.azure.com)
+2. Select **"Create new project"** → Follow the AI Foundry Wizard
+3. Configure your project with these specifications:
+   - **Region**: Choose based on model availability (East US, West Europe recommended)
+   - **Pricing Tier**: Standard (required for advanced features)
+   - **Resource Group**: Create new or use existing
 
-5. **Install dependencies**:
-   ```bash
-   # Install core Azure AI SDKs and Jupyter requirements
-   uv pip install azure-identity azure-ai-projects azure-ai-inference[opentelemetry] azure-search-documents azure-ai-evaluation azure-monitor-opentelemetry
+**3b. Model Deployment Strategy**
+Deploy these essential models with **maximum TPM settings**:
 
-   # Install Jupyter requirements
-   uv pip install ipykernel jupyterlab notebook
+| Model Type | Recommended Models | Purpose | Configuration |
+|------------|-------------------|---------|---------------|
+| **Chat/Completion** | `gpt-4o`, `gpt-4o-mini` | Primary reasoning & conversation | Max TPM, DataZone-Standard |
+| **Embeddings** | `text-embedding-3-large` | Vector search & RAG | Standard deployment |
+| **Specialized** | `phi-4`, `deepseek-r1` | Domain-specific tasks | Global-Standard |
 
-   # Register the kernel with Jupyter
-   python -m ipykernel install --user --name=.venv --display-name="Python (.venv)"
+**3c. Connection Configuration**
+Essential integrations to configure:
+- 🔍 [Bing Search Grounding](https://learn.microsoft.com/en-us/azure/ai-services/agents/how-to/tools/bing-grounding) - Real-time web data access
+- 🔎 [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) - Document indexing and retrieval
+- 🔐 **Access Control**: Add your account to `Azure AI Developer` role
 
-   # Install additional requirements (optional - for deploying repo or running mkdocs)
-   uv pip install -r requirements.txt
-   ```
+### Step 4: Environment Configuration
 
-   > **Note**: If you encounter kernel errors in VS Code, try:
-   > 1. Select kernel: Click "Select Kernel" > "Python Environments" > "Python (.venv)"
-   > 2. If kernel is not listed, run `python -m ipykernel install --user --name=.venv` again, or use the "Create New Kernel" wizard in VS Code to create a new Python environment
-   > 3. Reload VS Code if needed
+#### 📝 Configuration File Setup
+```bash
+# Create your environment configuration
+cp .env.example .env
+```
 
-6. **Choose your notebook environment**:
+#### 🔧 Critical Environment Variables
 
-   **Option A: VS Code**
-   - Install [VS Code Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-   - Install either:
-     - [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) for .ipynb files
-     - [Polyglot Notebooks extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) for .dib files
-   - Open any notebook and select your Python kernel (.venv)
+**Core Project Settings:**
+```env
+# Azure AI Foundry Project Connection
+PROJECT_CONNECTION_STRING=your-project-connection-string-from-azure-ml-workspace
+MODEL_DEPLOYMENT_NAME=your-primary-model-deployment-name
+EMBEDDING_MODEL_DEPLOYMENT_NAME=your-embedding-model-deployment-name
 
-   **Option B: GitHub Codespaces**
-   - Click "Code" > "Create codespace" on the repository
-   - Wait for environment setup
-   - Notebooks will be ready to run
+# Azure Authentication
+TENANT_ID=your-azure-tenant-id-from-portal
 
-   **Option C: Jupyter Lab/Notebook**
-   ```bash
-   # Install Jupyter if you haven't already
-   uv pip install jupyterlab notebook
+# Advanced Features  
+BING_CONNECTION_NAME=your-bing-search-connection-name
+SERVERLESS_MODEL_NAME=your-serverless-model-deployment-name
 
-   # Start Jupyter Lab (recommended)
-   jupyter lab
+# Monitoring & Telemetry
+AZURE_TRACING_GEN_AI_CONTENT_RECORDING_ENABLED=true
+AZURE_SDK_TRACING_IMPLEMENTATION=opentelemetry
+```
 
-   # Or start Jupyter Notebook
-   jupyter notebook
-   ```
+> ⚠️ **Important**: Ensure your `MODEL_DEPLOYMENT_NAME` supports [Azure AI Agents Service](https://learn.microsoft.com/en-us/azure/ai-services/agents/concepts/model-region-support). For Bing integration, use `gpt-4o-mini`.
 
-7. **Follow the Learning Path**:
-    1. **Introduction** (`1-introduction/`)
-       - `1-authentication.ipynb`: Set up your Azure credentials
-       - `2-environment_setup.ipynb`: Configure your environment
-       - `3-quick_start.ipynb`: Learn basic operations
+### Step 5: Dependency Installation
 
-    2. **Main Workshop** (`2-notebooks/`)
-       - Chat Completion & RAG (`1-chat_completion/`)
-       - Agent Development (`2-agent_service/`)
-       - Quality Attributes (`3-quality_attributes/`)
+#### 🚀 Fast Track Installation (Recommended)
+```bash
+# Install all dependencies at once
+uv pip install azure-identity azure-ai-projects azure-ai-inference[opentelemetry] \
+               azure-search-documents azure-ai-evaluation azure-monitor-opentelemetry \
+               ipykernel jupyterlab notebook pandas numpy matplotlib seaborn
 
----
+# Register Jupyter kernel
+python -m ipykernel install --user --name=ai-foundry-lab --display-name="AI Foundry Lab"
 
-## 📔 Workshop Learning Path
+# Optional: Full feature set (includes documentation tools)
+uv pip install -r requirements.txt
+```
 
-Follow these notebooks in sequence to complete the workshop:
+#### 🔧 Development Environment Selection
 
-### 1. Introduction (`1-introduction/`)
-| Notebook | Description |
-|----------|-------------|
-| [1. Authentication](1-introduction/1-authentication.ipynb) | Set up Azure credentials and access |
-| [2. Environment Setup](1-introduction/2-environment_setup.ipynb) | Configure your development environment |
-| [3. Quick Start](1-introduction/3-quick_start.ipynb) | Learn basic Azure AI Foundry operations |
+**Option A: Visual Studio Code (Recommended)**
+```bash
+# Install VS Code extensions (run these in VS Code terminal)
+code --install-extension ms-python.python
+code --install-extension ms-toolsai.jupyter
+```
+- Open any `.ipynb` file
+- Select kernel: `AI Foundry Lab` from the kernel picker
 
-### 2. Main Workshop (`2-notebooks/`)
-| Topic | Notebooks |
-|-------|-----------|
-| **Chat Completion & RAG** | • [Chat Completion & RaG](2-notebooks/1-chat_completion/) |
-| **Agent Development** | • [Agent Development](2-notebooks/2-agent_service/) |
-| **Quality Attributes** | • [Observability & Evaluations](2-notebooks/3-quality_attributes/) |
+**Option B: JupyterLab (Data Science Focused)**
+```bash
+# Launch JupyterLab
+jupyter lab
+# Navigate to notebooks and select the AI Foundry Lab kernel
+```
+
+**Option C: GitHub Codespaces (Cloud Development)**
+- Click **"Code"** → **"Create codespace"** on GitHub
+- Wait for automatic environment setup
+- All dependencies pre-installed and ready
 
 ---
 
-## 🤝 Contributing
+## � Learning Modules
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details on how to:
-- Submit bug reports and feature requests
-- Submit pull requests
-- Follow our coding standards
-- Participate in code reviews
+## 📚 Learning Modules
+
+Our laboratory follows a progressive learning architecture, designed to build expertise systematically:
+
+### 🎯 Module 1: Foundation & Authentication
+**Location:** `1-introduction/`
+
+| Notebook | Focus Area | Key Skills |
+|----------|------------|------------|
+| 🔐 [Authentication](1-introduction/1-authentication.ipynb) | Azure credential management & security | DefaultAzureCredential, token lifecycle, role-based access |
+| ⚙️ [Environment Setup](1-introduction/2-environment_setup.ipynb) | Development environment optimization | Project configuration, SDK integration, debugging |
+| 🚀 [Quick Start](1-introduction/3-quick_start.ipynb) | Core Azure AI Foundry operations | Model deployment, basic inference, connection testing |
+
+### 🤖 Module 2: Advanced AI Engineering
+**Location:** `2-notebooks/`
+
+#### 💬 Chat Completion & RAG Systems
+**Path:** `1-chat_completion/`
+- **Basic Chat Completion**: Foundation models and prompt engineering
+- **Embeddings & Vector Search**: Semantic understanding and similarity
+- **Retrieval-Augmented Generation**: Context-aware AI responses
+- **Phi-4 Integration**: Microsoft's specialized reasoning model
+- **DeepSeek R1**: Advanced reasoning and code generation
+
+#### 🤖 Intelligent Agent Development
+**Path:** `2-agent_service/`
+- **Agent Fundamentals**: Architecture patterns and lifecycle management
+- **Code Interpreter**: Automated code execution and analysis
+- **File Search**: Document processing and knowledge extraction
+- **Bing Grounding**: Real-time web data integration
+- **Azure AI Search**: Enterprise search and retrieval
+- **Azure Functions**: Serverless agent deployment
+
+#### 🔄 Multi-Agent Orchestration
+**Path:** `multi-agent/`
+- **Multi-Agent Solutions**: Collaborative AI system design
+- **Distributed Tracing**: End-to-end monitoring and debugging
+- **Agent Coordination**: Communication protocols and task distribution
+
+#### 🏗️ Advanced Frameworks
+**Path:** `4-frameworks/`
+- **RAG + Semantic Kernel**: Microsoft's orchestration framework
+- **AutoGen Multi-Agent RAG**: Automated agent generation and management
+- **Health Analytics**: Specialized domain applications with personalized insights
+
+#### 📊 Quality & Operations
+**Path:** `3-quality_attributes/`
+- **Observability**: Comprehensive monitoring and telemetry
+- **Evaluation Systems**: Automated quality assessment and benchmarking
+- **Production Readiness**: Deployment strategies and scaling patterns
 
 ---
 
-## ❓ Support
+## 🤖 Multi-Agent Systems
 
-If you need help or have questions:
+Explore cutting-edge multi-agent architectures that power enterprise AI solutions:
+
+### 🔄 Collaborative Intelligence
+- **Agent Specialization**: Domain-specific expertise and role assignment
+- **Task Orchestration**: Complex workflow automation and management  
+- **Knowledge Sharing**: Inter-agent communication and data exchange
+- **Failure Recovery**: Resilient system design and error handling
+
+### 📊 Advanced Monitoring
+- **Distributed Tracing**: End-to-end request tracking across agent networks
+- **Performance Analytics**: Real-time metrics and optimization insights
+- **Quality Assurance**: Automated testing and validation frameworks
 
 ---
+
+## 📊 Project Gallery
+
+### 🏥 End-to-End Health AI Platform
+**Location:** `3-ai-native-e2e-sample/`
+
+A production-ready application demonstrating enterprise AI patterns:
+
+#### 🎯 Architecture Highlights
+- **Backend**: FastAPI with Azure AI SDK integration
+- **Frontend**: Modern React with real-time updates  
+- **AI Agents**: Specialized health and wellness advisors
+- **Data Integration**: Multiple data sources and formats
+- **Monitoring**: Comprehensive observability and analytics
+
+#### 🔧 Technical Features
+- **Microservices Architecture**: Scalable and maintainable design
+- **Event-Driven Processing**: Asynchronous workflow management
+- **API-First Design**: RESTful interfaces with OpenAPI documentation
+- **Security**: Enterprise-grade authentication and authorization
+
+---
+
+## 🛠️ Troubleshooting & Support
+
+### ⚡ Quick Fixes
+
+**Kernel Issues in VS Code:**
+```bash
+# Refresh kernel registration
+python -m ipykernel install --user --name=ai-foundry-lab --display-name="AI Foundry Lab"
+# Reload VS Code window: Ctrl+Shift+P → "Developer: Reload Window"
+```
+
+**Environment Activation Problems:**
+```bash
+# Windows PowerShell execution policy
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# Verify virtual environment
+python -c "import sys; print(sys.executable)"
+```
+
+**Azure Authentication Issues:**
+```bash
+# Clear cached credentials
+az account clear
+az login --tenant YOUR_TENANT_ID
+
+# Verify access
+az account show
+```
+
+### 📚 Additional Resources
+
+- 📖 [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)
+- 🎥 [Video Tutorials](https://learn.microsoft.com/en-us/shows/ai-show/)
+- 💡 [Best Practices Guide](https://learn.microsoft.com/en-us/azure/ai-services/responsible-use-of-ai-overview)
+- 🔍 [GitHub Issues](https://github.com/dhangerkapil/ai-foundry-e2e-lab/issues) - Report bugs or request features
+
+---
+
+## 🤝 Community & Contributions
+
+### 🌟 Ways to Contribute
+- 📝 **Documentation**: Improve clarity and add examples
+- 🐛 **Bug Reports**: Help us identify and fix issues  
+- 💡 **Feature Requests**: Suggest new capabilities and improvements
+- 🔄 **Pull Requests**: Contribute code and enhancements
+
+### 📋 Contribution Guidelines
+Please review our [Contributing Guide](CONTRIBUTING.md) for:
+- Code style and formatting standards
+- Testing requirements and procedures
+- Pull request process and review criteria  
+- Community guidelines and expectations
+
+---
+
+## 📄 License & Attribution
+
+**Created by:** Kapil Dhanger  
+**License:** MIT License  
+**Repository:** [github.com/dhangerkapil/ai-foundry-e2e-lab](https://github.com/dhangerkapil/ai-foundry-e2e-lab)
+
+---
+
+<div align="center">
+
+**🚀 Ready to become an Azure AI Foundry expert?**
+
+[Start Your Journey](1-introduction/1-authentication.ipynb) • [Join Our Community](https://github.com/dhangerkapil/ai-foundry-e2e-lab/discussions) • [Report Issues](https://github.com/dhangerkapil/ai-foundry-e2e-lab/issues)
+
+*Built with ❤️ by Kapil Dhanger*
+
+</div>
 
 
 
