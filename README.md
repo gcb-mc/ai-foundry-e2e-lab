@@ -178,9 +178,9 @@ Follow this structured learning path to master Azure AI Foundry:
 ### 🔌 Phase 5: Model Context Protocol (MCP) Integration
 **Location:** `agents-with-mcp/`
 
-| Notebook | Description |
+| Implementation | Description |
 |----------|-------------|
-| 🔌 [Agents with MCP](agents-with-mcp/agents-mcp.ipynb) | Build agents that connect to MCP servers for dynamic function discovery. Create an inventory assessment agent for a cosmetics retailer with automated restock and clearance suggestions. |
+| 🔌 [MCP Inventory Agent](agents-with-mcp/README.md) | Complete working implementation of agents that connect to MCP servers for dynamic tool discovery. Features an intelligent inventory management agent for a cosmetics retailer with automated restock and clearance recommendations. Includes both client and server implementations with interactive chat interface. |
 
 ### 🏗️ Phase 6: Advanced Frameworks
 **Location:** `frameworks/`
