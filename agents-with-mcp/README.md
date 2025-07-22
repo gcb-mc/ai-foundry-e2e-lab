@@ -1,13 +1,5 @@
 # MCP Inventory Management Agent
 
-> ## ✅ **Status: Working & Complete!**
-> 
-> This project is fully functional and tested. The MCP inventory management agent successfully:
-> - Connects to Azure AI Agents
-> - Discovers and uses MCP server tools
-> - Provides intelligent inventory analysis and recommendations
-> - Runs interactive chat sessions for inventory management
-
 This project demonstrates how to connect AI agents to tools using the **Model Context Protocol (MCP)**. The implementation creates an intelligent inventory management agent for a cosmetics retailer that can automatically discover and use tools to analyze inventory levels and provide actionable recommendations.
 
 ## 🎯 What You'll Build
