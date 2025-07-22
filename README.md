@@ -104,13 +104,14 @@ python -m ipykernel install --user --name=ai-foundry-lab --display-name="AI Foun
    - Create a new project with Standard pricing tier
    - Choose region based on model availability (East US recommended)
 
-2. **Deploy Required Models**
+2. **Deploy Required Models & Services**
    
    | Model Type | Recommended Models | Purpose |
    |------------|-------------------|---------|
    | **Chat/Completion** | `gpt-4o`, `gpt-4o-mini` | Primary reasoning & conversation |
    | **Embeddings** | `text-embedding-3-large` | Vector search & RAG |
    | **Specialized** | `phi-4`, `deepseek-r1` | Domain-specific tasks |
+   | **Search Service** | `Azure AI Search` | Knowledge base & enterprise search integration |
 
 3. **Configure Environment Variables**
    ```env
