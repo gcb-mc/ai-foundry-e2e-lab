@@ -96,7 +96,7 @@ python -m ipykernel install --user --name=ai-foundry-lab --display-name="AI Foun
 1. **Create Azure AI Foundry Project**
    - Navigate to [Azure AI Foundry Portal](https://ai.azure.com)
    - Create a new project with Standard pricing tier
-   - Choose region based on model availability (East US recommended)
+   - Choose region based on model availability (East US 2 recommended)
 
 2. **Deploy Required Models & Services**
    
