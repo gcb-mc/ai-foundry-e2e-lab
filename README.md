@@ -18,20 +18,14 @@
 
 This comprehensive laboratory transforms you from an AI enthusiast into an Azure AI Foundry expert. Through progressive, hands-on modules, you'll master:
 
-🔬 **Core AI Engineering**
-- Advanced model deployment strategies and optimization techniques
-- Production-ready authentication and security implementation  
-- Scalable project architecture and configuration management
+1. Setup, Authentication, Quick Start
+2. Prompting, Embeddings, RAG, Phi-4, DeepSeek
+3. Agents – File Search, Bing, Azure Functions
+4. Multi-Agent Orchestration + Tracing
+5. Model Context Protocol (MCP) with Agents
+6. Frameworks – AutoGen, Semantic Kernel
+7. Observability & Evaluation
 
-🤖 **Intelligent Agent Development**
-- Multi-modal AI agents with specialized capabilities
-- Advanced RAG (Retrieval-Augmented Generation) implementations
-- Real-time decision-making systems and automated workflows
-
-🏗️ **Enterprise-Grade Solutions**
-- End-to-end AI application development with modern frameworks
-- Multi-agent orchestration and coordination patterns
-- Quality assurance through comprehensive evaluation and monitoring
 
 > **🎓 Laboratory Format**: One day intensive hands-on experience  
 > **🎯 Target Audience**: Developers, AI practitioners, and solution architects  
