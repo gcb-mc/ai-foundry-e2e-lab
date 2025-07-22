@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-green?style=for-the-badge&logo=python)](https://python.org)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Lab-orange?style=for-the-badge&logo=jupyter)](https://jupyter.org)
 
-**End-to-End AI Development Laboratory by Kapil Dhanger**
+**End-to-End Azure AI Foundry Development Laboratory**
 
 *Master Azure AI Foundry through hands-on experimentation and real-world applications*
 
