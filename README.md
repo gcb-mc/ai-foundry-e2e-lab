@@ -115,9 +115,12 @@ python -m ipykernel install --user --name=ai-foundry-lab --display-name="AI Foun
 3. **Configure Environment Variables**
    ```env
    PROJECT_CONNECTION_STRING=your-project-connection-string
+   AZURE_AI_PROJECT_ENDPOINT=your-azure-ai-project-endpoint
    MODEL_DEPLOYMENT_NAME=your-primary-model-deployment-name
    EMBEDDING_MODEL_DEPLOYMENT_NAME=your-embedding-model-deployment-name
    TENANT_ID=your-azure-tenant-id
+   GROUNDING_WITH_BING_CONNECTION_NAME=your-bing-search-connection-name
+   SERVERLESS_MODEL_NAME=your-serverless-model-name
    ```
 
 ---
@@ -248,11 +251,17 @@ python -c "import sys; print(sys.executable)"
 
 **Azure Authentication Issues:**
 ```powershell
-# Clear cached credentials and re-login
+# Recommended: Use Azure CLI authentication
+az login --tenant YOUR_TENANT_ID
+az account show
+
+# Alternative: Clear cached credentials and re-login
 az account clear
 az login --tenant YOUR_TENANT_ID
 az account show
 ```
+
+> **Note:** If you see deprecation warnings about the Azure Account extension in VS Code, use `az login` in the terminal instead. The Azure Account extension for VS Code has been deprecated in favor of Azure CLI authentication.
 
 ### 📚 Additional Resources
 
