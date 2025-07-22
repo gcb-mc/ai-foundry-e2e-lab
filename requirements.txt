@@ -23,3 +23,7 @@ tabulate                                     # Pretty-print tabular data
 nbformat                                     # Notebook format conversion
 asyncio                                      # Async I/O support
 typing                                       # Type hinting support
+
+# Model Context Protocol (MCP) Dependencies
+mcp                                          # Model Context Protocol client
+fastmcp                                      # FastMCP server framework
