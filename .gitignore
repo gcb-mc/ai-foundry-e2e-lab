@@ -127,3 +127,14 @@ sample/frontend/.env
 .DS_Store
 
 *.lock
+
+# Security and Certificate Files
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.truststore
