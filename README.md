@@ -121,6 +121,12 @@ python -m ipykernel install --user --name=ai-foundry-lab --display-name="AI Foun
    TENANT_ID=your-azure-tenant-id
    GROUNDING_WITH_BING_CONNECTION_NAME=your-bing-search-connection-name
    SERVERLESS_MODEL_NAME=your-serverless-model-name
+   
+   # Additional info for Knowledge (Azure AI Search)
+   AZURE_AI_SEARCH_ENDPOINT=your-azure-ai-search-endpoint
+   AZURE_AI_SEARCH_API_VERSION=your-azure-ai-search-api-version
+   SEARCH_AUTHENTICATION_METHOD=your-search-authentication-method
+   AZURE_AI_SEARCH_API_KEY=your-azure-ai-search-api-key
    ```
 
 ---
