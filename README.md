@@ -1,4 +1,4 @@
-# 🚀 Azure AI Foundry E2E Laboratory
+# 🚀 Azure AI Foundry E2E Workshop
 
 [![Azure AI Foundry](https://img.shields.io/badge/Azure%20AI-Foundry-blue?style=for-the-badge&logo=microsoft)](https://ai.azure.com)
 [![Python](https://img.shields.io/badge/Python-3.10+-green?style=for-the-badge&logo=python)](https://python.org)
